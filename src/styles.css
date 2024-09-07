@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+CU:wght@100..400&display=swap');
+
+/*   font-family: "Playwrite CU", cursive; */
+/*   font-family: "Montserrat", system-ui; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+:root {
+    --cinza: #264653;
+    --verde: #2a9d8f;
+    --amarelo: #e9c46a;
+    --laranja: #f4a261;
+    --laranjaEscuro: #e76f51;
+    --preto: #0a0908;
+}

@@ -1,0 +1,23 @@
+section {
+    background-color: var(--cinza);
+    color: white;
+    height: 2em;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+p {
+    font-family: "Montserrat";
+}
+
+@media screen and (max-width: 320px) {
+    p {
+        font-size: .8em;
+    }
+}
+
