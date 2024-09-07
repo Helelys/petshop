@@ -1,0 +1,115 @@
+body {
+    background: url("https://img.freepik.com/fotos-gratis/formas-de-papel-psicodelico-com-espaco-de-copia_23-2149378246.jpg?t=st=1725712366~exp=1725715966~hmac=76db03469ed10b7a99f08ef5602cfc5d95f67fb8904f4ef46fe7e4720a99f0e5&w=1380");
+
+    max-width: 100vw;
+    height: 75vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2em;
+    height: 100%;
+}
+
+.container_textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container_imagem > img {
+    width: 50em;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h1 {
+    font-family: var(--play );
+    font-weight: 600;
+    font-size: 6rem;
+}
+
+h1 span {
+    text-shadow: 2px -1px 4px rgba(85, 0, 0, 0.77);
+}
+
+h2, a {
+    font-family: var(--montserrat);
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 1em;
+}
+
+.container_botao {
+    width: 80%;
+    margin: 1em 0;
+    height: 4rem;
+    background: var(--laranja);
+    border-radius: 2em;
+}
+
+.container_botao a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5em;
+    color: var(--preto);
+}
+
+.container_botao:hover {
+    background: var(--laranjaEscuro);
+    transition: ease .2s;
+}
+
+@media screen and (max-width: 1366px) {
+    .container_imagem, .container_imagem img {
+        display: none;
+    }
+
+    .container_botao {
+        margin: .5em 0;
+    }
+
+    h2 {
+        margin-bottom: .3em;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    h1 {
+        font-size: 4.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    body {
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 3.5em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .container_botao {
+        width: 90vw;
+    }
+}

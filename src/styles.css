@@ -25,4 +25,7 @@ ul {
     --laranja: #f4a261;
     --laranjaEscuro: #e76f51;
     --preto: #0a0908;
+
+    --montserrat: "Montserrat", system-ui;
+    --play: "Playwrite CU", cursive;
 }
