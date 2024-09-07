@@ -1,0 +1,81 @@
+header {
+    background: var(--laranjaEscuro);
+    padding-inline: 1em;
+}
+
+nav {
+    max-width: 1280px;
+    height: 5em;
+
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    font-size: 3em;
+    z-index: 1;
+}
+
+.nav-list {
+    display: flex;
+    gap: 1em;
+}
+
+.nav-list a {
+    color: var(--preto);
+    font-family: "Montserrat", system-ui;
+    font-weight: 500;
+    padding-block: 1.5em;
+}
+
+/* botao */
+
+.hamburguer {
+    z-index: 1;
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid white;
+    cursor: pointer;
+}
+
+.hamburguer::after, .hamburguer::before {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin-top: 3px;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburguer {
+        display: block;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: var(--laranjaEscuro);
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+
+        /* clip */
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+        pointer-events: none;
+    }
+
+    .nav.ativo .nav-list {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+}
