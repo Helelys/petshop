@@ -1,0 +1,23 @@
+.container {
+    width: 30rem;
+    margin: auto;
+    height: 35rem;
+}
+
+.container_img > img {
+    width: 100%;
+    height: 25rem;
+    background-position: center;
+    background-size: contain;
+}
+
+.container_texto {
+    opacity: 0%;
+    text-align: center;  
+    transition: .5s;
+}
+
+.container:hover > .container_texto {
+    opacity: 100%;
+}
+

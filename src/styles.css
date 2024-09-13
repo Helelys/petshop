@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: linear-gradient(to right bottom, #f6b3c4, #f8bbcd, #f9c2d6, #fbcade, #fcd2e6);
+}
+
 a {
     text-decoration: none;
 }
