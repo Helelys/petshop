@@ -1,7 +1,7 @@
 .container {
     width: 15em;
     margin: auto;
-    height: 25em;
+    height: 100%;
 }
 
 .container_img {
@@ -18,7 +18,7 @@
 .container_texto {
     margin-block: 2em;
     opacity: 0%;
-    text-align: center;  
+    text-align: center;
     transition: .5s;
 }
 
