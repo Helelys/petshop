@@ -19,7 +19,9 @@
 .container_texto {
     margin-block: 2em;
     text-align: center;
-    transition: .5s;
+
+    height: 4em;
+
 }
 
 h2 {
